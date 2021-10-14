@@ -1,0 +1,1 @@
+_base_ = '/opt/ml/detection/object-detection-level2-cv-01/configs/boostcamp/default_runtime.py'
