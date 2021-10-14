@@ -1,0 +1,26 @@
+{
+    "os": "Linux-4.4.0-59-generic-x86_64-with-debian-buster-sid",
+    "python": "3.7.11",
+    "heartbeatAt": "2021-10-06T08:16:54.252699",
+    "startedAt": "2021-10-06T08:16:53.074855",
+    "docker": null,
+    "gpu": "Tesla V100-PCIE-32GB",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "/opt/ml/detection/object-detection-level2-cv-01/configs/boostcamp/boostcamp_swin_PAFPN/Swint_Test.py"
+    ],
+    "state": "running",
+    "program": "tools/train.py",
+    "codePath": "tools/train.py",
+    "git": {
+        "remote": "https://github.com/boostcampaitech2/object-detection-level2-cv-01.git",
+        "commit": "f780bbd186a57b141dd1edacfad962015088e619"
+    },
+    "email": null,
+    "root": "/opt/ml/detection/object-detection-level2-cv-01",
+    "host": "00a46a6c3ac0",
+    "username": "root",
+    "executable": "/opt/conda/envs/detection/bin/python"
+}

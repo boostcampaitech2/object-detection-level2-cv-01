@@ -1,0 +1,41 @@
+/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/core/anchor/anchor_generator.py:324: UserWarning: ``grid_anchors`` would be deprecated soon. Please use ``grid_priors``
+  warnings.warn('``grid_anchors`` would be deprecated soon. '
+/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/core/anchor/anchor_generator.py:361: UserWarning: ``single_level_grid_anchors`` would be deprecated soon. Please use ``single_level_grid_priors``
+  '``single_level_grid_anchors`` would be deprecated soon. '
+2021-10-06 08:18:54,991 - mmdet - INFO - Epoch [1][50/1109]	lr: 5.851e-06, eta: 6:01:58, time: 0.392, data_time: 0.050, memory: 2703, loss_rpn_cls: 0.6642, loss_rpn_bbox: 0.0414, s0.loss_cls: 0.6054, s0.acc: 86.0352, s0.loss_bbox: 0.1987, s1.loss_cls: 0.8014, s1.acc: 67.6826, s1.loss_bbox: 0.0397, s2.loss_cls: 0.1366, s2.acc: 83.4160, s2.loss_bbox: 0.0097, loss: 2.4971
+2021-10-06 08:19:11,497 - mmdet - INFO - Epoch [1][100/1109]	lr: 1.080e-05, eta: 5:33:05, time: 0.330, data_time: 0.005, memory: 2703, loss_rpn_cls: 0.4909, loss_rpn_bbox: 0.0353, s0.loss_cls: 0.3055, s0.acc: 94.4326, s0.loss_bbox: 0.1641, s1.loss_cls: 0.0938, s1.acc: 97.6123, s1.loss_bbox: 0.0398, s2.loss_cls: 0.0273, s2.acc: 98.6602, s2.loss_bbox: 0.0080, loss: 1.1647
+2021-10-06 08:19:28,023 - mmdet - INFO - Epoch [1][150/1109]	lr: 1.575e-05, eta: 5:23:23, time: 0.331, data_time: 0.005, memory: 2703, loss_rpn_cls: 0.2745, loss_rpn_bbox: 0.0352, s0.loss_cls: 0.2720, s0.acc: 94.5049, s0.loss_bbox: 0.1517, s1.loss_cls: 0.0808, s1.acc: 97.4580, s1.loss_bbox: 0.0434, s2.loss_cls: 0.0255, s2.acc: 98.6250, s2.loss_bbox: 0.0082, loss: 0.8913
+2021-10-06 08:19:44,409 - mmdet - INFO - Epoch [1][200/1109]	lr: 2.070e-05, eta: 5:17:46, time: 0.328, data_time: 0.005, memory: 2703, loss_rpn_cls: 0.2015, loss_rpn_bbox: 0.0354, s0.loss_cls: 0.2978, s0.acc: 94.0000, s0.loss_bbox: 0.1526, s1.loss_cls: 0.0901, s1.acc: 96.9912, s1.loss_bbox: 0.0494, s2.loss_cls: 0.0293, s2.acc: 98.3711, s2.loss_bbox: 0.0103, loss: 0.8665
+2021-10-06 08:20:00,880 - mmdet - INFO - Epoch [1][250/1109]	lr: 2.565e-05, eta: 5:14:35, time: 0.329, data_time: 0.005, memory: 2703, loss_rpn_cls: 0.1828, loss_rpn_bbox: 0.0324, s0.loss_cls: 0.3094, s0.acc: 93.5088, s0.loss_bbox: 0.1595, s1.loss_cls: 0.0968, s1.acc: 96.5576, s1.loss_bbox: 0.0600, s2.loss_cls: 0.0299, s2.acc: 98.2422, s2.loss_bbox: 0.0120, loss: 0.8829
+2021-10-06 08:20:17,317 - mmdet - INFO - Epoch [1][300/1109]	lr: 3.060e-05, eta: 5:12:17, time: 0.329, data_time: 0.005, memory: 2703, loss_rpn_cls: 0.1588, loss_rpn_bbox: 0.0278, s0.loss_cls: 0.2876, s0.acc: 93.7432, s0.loss_bbox: 0.1512, s1.loss_cls: 0.0966, s1.acc: 96.4121, s1.loss_bbox: 0.0627, s2.loss_cls: 0.0300, s2.acc: 98.1602, s2.loss_bbox: 0.0133, loss: 0.8281
+2021-10-06 08:20:33,655 - mmdet - INFO - Epoch [1][350/1109]	lr: 3.555e-05, eta: 5:10:17, time: 0.327, data_time: 0.005, memory: 2703, loss_rpn_cls: 0.1706, loss_rpn_bbox: 0.0351, s0.loss_cls: 0.2980, s0.acc: 92.8779, s0.loss_bbox: 0.1592, s1.loss_cls: 0.1077, s1.acc: 95.4707, s1.loss_bbox: 0.0760, s2.loss_cls: 0.0354, s2.acc: 97.5752, s2.loss_bbox: 0.0179, loss: 0.8999
+2021-10-06 08:20:50,116 - mmdet - INFO - Epoch [1][400/1109]	lr: 4.050e-05, eta: 5:09:01, time: 0.329, data_time: 0.005, memory: 2703, loss_rpn_cls: 0.1747, loss_rpn_bbox: 0.0365, s0.loss_cls: 0.3502, s0.acc: 91.4297, s0.loss_bbox: 0.1916, s1.loss_cls: 0.1281, s1.acc: 94.3848, s1.loss_bbox: 0.0916, s2.loss_cls: 0.0441, s2.acc: 96.8398, s2.loss_bbox: 0.0239, loss: 1.0407
+2021-10-06 08:21:06,555 - mmdet - INFO - Epoch [1][450/1109]	lr: 4.545e-05, eta: 5:07:55, time: 0.329, data_time: 0.005, memory: 2703, loss_rpn_cls: 0.1421, loss_rpn_bbox: 0.0299, s0.loss_cls: 0.3355, s0.acc: 92.4570, s0.loss_bbox: 0.1722, s1.loss_cls: 0.1220, s1.acc: 94.8945, s1.loss_bbox: 0.0847, s2.loss_cls: 0.0408, s2.acc: 97.0918, s2.loss_bbox: 0.0232, loss: 0.9505
+2021-10-06 08:21:23,610 - mmdet - INFO - Epoch [1][500/1109]	lr: 5.040e-05, eta: 5:08:06, time: 0.341, data_time: 0.006, memory: 2703, loss_rpn_cls: 0.1330, loss_rpn_bbox: 0.0282, s0.loss_cls: 0.2839, s0.acc: 93.1543, s0.loss_bbox: 0.1397, s1.loss_cls: 0.1215, s1.acc: 94.2158, s1.loss_bbox: 0.0908, s2.loss_cls: 0.0462, s2.acc: 96.1494, s2.loss_bbox: 0.0315, loss: 0.8746
+2021-10-06 08:21:41,710 - mmdet - INFO - Epoch [1][550/1109]	lr: 5.535e-05, eta: 5:09:57, time: 0.362, data_time: 0.006, memory: 2703, loss_rpn_cls: 0.1411, loss_rpn_bbox: 0.0344, s0.loss_cls: 0.3345, s0.acc: 91.5625, s0.loss_bbox: 0.1710, s1.loss_cls: 0.1396, s1.acc: 93.0322, s1.loss_bbox: 0.1091, s2.loss_cls: 0.0538, s2.acc: 95.3701, s2.loss_bbox: 0.0380, loss: 1.0214
+2021-10-06 08:21:58,319 - mmdet - INFO - Epoch [1][600/1109]	lr: 6.030e-05, eta: 5:09:10, time: 0.332, data_time: 0.005, memory: 2703, loss_rpn_cls: 0.1230, loss_rpn_bbox: 0.0289, s0.loss_cls: 0.3154, s0.acc: 92.2949, s0.loss_bbox: 0.1509, s1.loss_cls: 0.1337, s1.acc: 93.4824, s1.loss_bbox: 0.1013, s2.loss_cls: 0.0510, s2.acc: 95.3633, s2.loss_bbox: 0.0379, loss: 0.9421
+2021-10-06 08:22:15,158 - mmdet - INFO - Epoch [1][650/1109]	lr: 6.525e-05, eta: 5:08:47, time: 0.337, data_time: 0.005, memory: 2703, loss_rpn_cls: 0.1237, loss_rpn_bbox: 0.0327, s0.loss_cls: 0.3261, s0.acc: 91.8643, s0.loss_bbox: 0.1606, s1.loss_cls: 0.1354, s1.acc: 93.3857, s1.loss_bbox: 0.1049, s2.loss_cls: 0.0521, s2.acc: 95.4014, s2.loss_bbox: 0.0370, loss: 0.9726
+2021-10-06 08:22:31,615 - mmdet - INFO - Epoch [1][700/1109]	lr: 7.020e-05, eta: 5:07:55, time: 0.329, data_time: 0.005, memory: 2703, loss_rpn_cls: 0.1220, loss_rpn_bbox: 0.0311, s0.loss_cls: 0.3301, s0.acc: 91.8604, s0.loss_bbox: 0.1620, s1.loss_cls: 0.1426, s1.acc: 92.9863, s1.loss_bbox: 0.1114, s2.loss_cls: 0.0539, s2.acc: 95.3467, s2.loss_bbox: 0.0365, loss: 0.9895
+2021-10-06 08:22:48,241 - mmdet - INFO - Epoch [1][750/1109]	lr: 7.515e-05, eta: 5:07:20, time: 0.333, data_time: 0.006, memory: 2703, loss_rpn_cls: 0.1200, loss_rpn_bbox: 0.0295, s0.loss_cls: 0.3418, s0.acc: 91.7803, s0.loss_bbox: 0.1636, s1.loss_cls: 0.1441, s1.acc: 93.0605, s1.loss_bbox: 0.1083, s2.loss_cls: 0.0552, s2.acc: 95.2930, s2.loss_bbox: 0.0375, loss: 1.0000
+2021-10-06 08:23:04,759 - mmdet - INFO - Epoch [1][800/1109]	lr: 8.010e-05, eta: 5:06:40, time: 0.330, data_time: 0.005, memory: 2703, loss_rpn_cls: 0.1355, loss_rpn_bbox: 0.0317, s0.loss_cls: 0.3453, s0.acc: 92.0889, s0.loss_bbox: 0.1572, s1.loss_cls: 0.1364, s1.acc: 93.8135, s1.loss_bbox: 0.0950, s2.loss_cls: 0.0524, s2.acc: 95.6943, s2.loss_bbox: 0.0341, loss: 0.9876
+2021-10-06 08:23:21,304 - mmdet - INFO - Epoch [1][850/1109]	lr: 8.505e-05, eta: 5:06:05, time: 0.331, data_time: 0.006, memory: 2703, loss_rpn_cls: 0.1154, loss_rpn_bbox: 0.0255, s0.loss_cls: 0.3059, s0.acc: 92.8975, s0.loss_bbox: 0.1290, s1.loss_cls: 0.1273, s1.acc: 93.9658, s1.loss_bbox: 0.0892, s2.loss_cls: 0.0504, s2.acc: 95.5869, s2.loss_bbox: 0.0369, loss: 0.8797
+Traceback (most recent call last):
+  File "tools/train.py", line 188, in <module>
+    main()
+  File "tools/train.py", line 184, in main
+    meta=meta)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/apis/train.py", line 174, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 127, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 51, in train
+    self.call_hook('after_train_iter')
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/base_runner.py", line 307, in call_hook
+    getattr(hook, fn_name)(self)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/hooks/optimizer.py", line 35, in after_train_iter
+    runner.outputs['loss'].backward()
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/tensor.py", line 221, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/autograd/__init__.py", line 132, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+KeyboardInterrupt

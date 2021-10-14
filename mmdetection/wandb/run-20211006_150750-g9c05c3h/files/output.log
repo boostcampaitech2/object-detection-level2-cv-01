@@ -1,0 +1,70 @@
+
+2021-10-06 15:08:04,594 - mmdet - INFO - Epoch [1][50/1109]	lr: 5.851e-06, eta: 2:25:52, time: 0.158, data_time: 0.048, memory: 470, loss_center_heatmap: 24.9769, loss_wh: 2.3369, loss_offset: 0.5018, loss: 27.8156
+2021-10-06 15:08:09,268 - mmdet - INFO - Epoch [1][100/1109]	lr: 1.080e-05, eta: 1:55:59, time: 0.093, data_time: 0.005, memory: 470, loss_center_heatmap: 22.9606, loss_wh: 2.3680, loss_offset: 0.4993, loss: 25.8279
+2021-10-06 15:08:13,653 - mmdet - INFO - Epoch [1][150/1109]	lr: 1.575e-05, eta: 1:44:11, time: 0.088, data_time: 0.005, memory: 470, loss_center_heatmap: 20.3456, loss_wh: 2.3799, loss_offset: 0.4841, loss: 23.2096
+2021-10-06 15:08:18,429 - mmdet - INFO - Epoch [1][200/1109]	lr: 2.070e-05, eta: 1:40:03, time: 0.096, data_time: 0.005, memory: 470, loss_center_heatmap: 12.7906, loss_wh: 2.0879, loss_offset: 0.4396, loss: 15.3180
+2021-10-06 15:08:22,658 - mmdet - INFO - Epoch [1][250/1109]	lr: 2.565e-05, eta: 1:35:32, time: 0.085, data_time: 0.005, memory: 470, loss_center_heatmap: 11.7101, loss_wh: 2.2525, loss_offset: 0.3730, loss: 14.3357
+2021-10-06 15:08:26,985 - mmdet - INFO - Epoch [1][300/1109]	lr: 3.060e-05, eta: 1:32:48, time: 0.087, data_time: 0.005, memory: 470, loss_center_heatmap: 9.1307, loss_wh: 2.2589, loss_offset: 0.2702, loss: 11.6597
+2021-10-06 15:08:31,272 - mmdet - INFO - Epoch [1][350/1109]	lr: 3.555e-05, eta: 1:30:43, time: 0.086, data_time: 0.005, memory: 470, loss_center_heatmap: 7.5525, loss_wh: 2.2058, loss_offset: 0.2532, loss: 10.0115
+2021-10-06 15:08:35,479 - mmdet - INFO - Epoch [1][400/1109]	lr: 4.050e-05, eta: 1:28:57, time: 0.084, data_time: 0.005, memory: 470, loss_center_heatmap: 6.2000, loss_wh: 2.2991, loss_offset: 0.2553, loss: 8.7544
+2021-10-06 15:08:39,651 - mmdet - INFO - Epoch [1][450/1109]	lr: 4.545e-05, eta: 1:27:29, time: 0.083, data_time: 0.005, memory: 470, loss_center_heatmap: 4.9889, loss_wh: 2.0615, loss_offset: 0.2512, loss: 7.3016
+2021-10-06 15:08:43,698 - mmdet - INFO - Epoch [1][500/1109]	lr: 5.040e-05, eta: 1:26:05, time: 0.081, data_time: 0.005, memory: 470, loss_center_heatmap: 4.5506, loss_wh: 1.9279, loss_offset: 0.2515, loss: 6.7300
+2021-10-06 15:08:47,724 - mmdet - INFO - Epoch [1][550/1109]	lr: 5.535e-05, eta: 1:24:53, time: 0.081, data_time: 0.005, memory: 470, loss_center_heatmap: 4.0455, loss_wh: 1.9522, loss_offset: 0.2520, loss: 6.2497
+2021-10-06 15:08:52,230 - mmdet - INFO - Epoch [1][600/1109]	lr: 6.030e-05, eta: 1:24:36, time: 0.090, data_time: 0.005, memory: 470, loss_center_heatmap: 3.9434, loss_wh: 1.8506, loss_offset: 0.2578, loss: 6.0518
+2021-10-06 15:08:57,021 - mmdet - INFO - Epoch [1][650/1109]	lr: 6.525e-05, eta: 1:24:45, time: 0.096, data_time: 0.005, memory: 470, loss_center_heatmap: 3.5261, loss_wh: 1.5926, loss_offset: 0.2598, loss: 5.3784
+2021-10-06 15:09:01,255 - mmdet - INFO - Epoch [1][700/1109]	lr: 7.020e-05, eta: 1:24:09, time: 0.085, data_time: 0.005, memory: 470, loss_center_heatmap: 3.5259, loss_wh: 1.4478, loss_offset: 0.2526, loss: 5.2262
+2021-10-06 15:09:05,936 - mmdet - INFO - Epoch [1][750/1109]	lr: 7.515e-05, eta: 1:24:09, time: 0.094, data_time: 0.005, memory: 470, loss_center_heatmap: 3.5020, loss_wh: 1.3305, loss_offset: 0.2597, loss: 5.0922
+2021-10-06 15:09:10,519 - mmdet - INFO - Epoch [1][800/1109]	lr: 8.010e-05, eta: 1:24:02, time: 0.092, data_time: 0.005, memory: 470, loss_center_heatmap: 3.4911, loss_wh: 1.1816, loss_offset: 0.2658, loss: 4.9385
+2021-10-06 15:09:14,913 - mmdet - INFO - Epoch [1][850/1109]	lr: 8.505e-05, eta: 1:23:43, time: 0.088, data_time: 0.005, memory: 470, loss_center_heatmap: 3.4573, loss_wh: 1.1328, loss_offset: 0.2682, loss: 4.8583
+2021-10-06 15:09:19,120 - mmdet - INFO - Epoch [1][900/1109]	lr: 9.000e-05, eta: 1:23:15, time: 0.084, data_time: 0.005, memory: 470, loss_center_heatmap: 3.4260, loss_wh: 1.1696, loss_offset: 0.2520, loss: 4.8476
+2021-10-06 15:09:23,652 - mmdet - INFO - Epoch [1][950/1109]	lr: 9.495e-05, eta: 1:23:08, time: 0.091, data_time: 0.005, memory: 470, loss_center_heatmap: 3.3360, loss_wh: 0.9709, loss_offset: 0.2518, loss: 4.5587
+2021-10-06 15:09:28,061 - mmdet - INFO - Exp name: CenterNet_R50.py
+2021-10-06 15:09:28,061 - mmdet - INFO - Epoch [1][1000/1109]	lr: 9.990e-05, eta: 1:22:54, time: 0.088, data_time: 0.005, memory: 470, loss_center_heatmap: 3.3161, loss_wh: 1.1047, loss_offset: 0.2562, loss: 4.6770
+2021-10-06 15:09:32,145 - mmdet - INFO - Epoch [1][1050/1109]	lr: 1.000e-04, eta: 1:22:24, time: 0.082, data_time: 0.005, memory: 470, loss_center_heatmap: 3.3764, loss_wh: 1.0578, loss_offset: 0.2545, loss: 4.6887
+2021-10-06 15:09:36,597 - mmdet - INFO - Epoch [1][1100/1109]	lr: 1.000e-04, eta: 1:22:15, time: 0.089, data_time: 0.005, memory: 470, loss_center_heatmap: 3.2862, loss_wh: 1.1025, loss_offset: 0.2591, loss: 4.6478
+[                                                  ] 0/448, elapsed: 0s, ETA:
+2021-10-06 15:09:37,418 - mmdet - INFO - Saving checkpoint at 1 epochs
+Traceback (most recent call last):
+  File "tools/train.py", line 188, in <module>
+    main()
+  File "tools/train.py", line 184, in main
+    meta=meta)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/apis/train.py", line 174, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 127, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 54, in train
+    self.call_hook('after_train_epoch')
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/base_runner.py", line 307, in call_hook
+    getattr(hook, fn_name)(self)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/hooks/evaluation.py", line 237, in after_train_epoch
+    self._do_evaluate(runner)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/core/evaluation/eval_hooks.py", line 18, in _do_evaluate
+    results = single_gpu_test(runner.model, self.dataloader, show=False)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/apis/test.py", line 28, in single_gpu_test
+    result = model(return_loss=False, rescale=True, **data)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/parallel/data_parallel.py", line 42, in forward
+    return super().forward(*inputs, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/parallel/data_parallel.py", line 159, in forward
+    return self.module(*inputs[0], **kwargs[0])
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/fp16_utils.py", line 98, in new_func
+    return old_func(*args, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/detectors/base.py", line 174, in forward
+    return self.forward_test(img, img_metas, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/detectors/base.py", line 147, in forward_test
+    return self.simple_test(imgs[0], img_metas[0], **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/detectors/single_stage.py", line 103, in simple_test
+    feat, img_metas, rescale=rescale)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/dense_heads/base_dense_head.py", line 79, in simple_test
+    return self.simple_test_bboxes(feats, img_metas, rescale=rescale)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/dense_heads/dense_test_mixins.py", line 36, in simple_test_bboxes
+    results_list = self.get_bboxes(*outs, img_metas, rescale=rescale)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/dense_heads/centernet_head.py", line 285, in get_bboxes
+    border_pixs = [img_meta['border'] for img_meta in img_metas]
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/dense_heads/centernet_head.py", line 285, in <listcomp>
+    border_pixs = [img_meta['border'] for img_meta in img_metas]
+KeyError: 'border'

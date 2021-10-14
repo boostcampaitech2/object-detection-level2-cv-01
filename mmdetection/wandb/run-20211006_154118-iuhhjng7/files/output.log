@@ -1,0 +1,38 @@
+/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/core/anchor/anchor_generator.py:324: UserWarning: ``grid_anchors`` would be deprecated soon. Please use ``grid_priors``
+  warnings.warn('``grid_anchors`` would be deprecated soon. '
+/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/core/anchor/anchor_generator.py:361: UserWarning: ``single_level_grid_anchors`` would be deprecated soon. Please use ``single_level_grid_priors``
+  '``single_level_grid_anchors`` would be deprecated soon. '
+Traceback (most recent call last):
+  File "tools/train.py", line 188, in <module>
+    main()
+  File "tools/train.py", line 184, in main
+    meta=meta)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/apis/train.py", line 174, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 127, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 50, in train
+    self.run_iter(data_batch, train_mode=True, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 30, in run_iter
+    **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/parallel/data_parallel.py", line 67, in train_step
+    return self.module.train_step(*inputs[0], **kwargs[0])
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/detectors/base.py", line 238, in train_step
+    losses = self(**data)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/fp16_utils.py", line 98, in new_func
+    return old_func(*args, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/detectors/base.py", line 172, in forward
+    return self.forward_train(img, img_metas, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/detectors/two_stage.py", line 149, in forward_train
+    **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/roi_heads/htc_roi_head.py", line 315, in forward_train
+    semantic_feat)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/roi_heads/htc_roi_head.py", line 151, in _mask_forward_train
+    rcnn_train_cfg)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/roi_heads/mask_heads/fcn_mask_head.py", line 144, in get_targets
+    gt_masks, rcnn_train_cfg)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/core/mask/mask_target.py", line 60, in mask_target
+    pos_assigned_gt_inds_list, gt_masks_list, cfg_list)
+TypeError: 'NoneType' object is not iterable
