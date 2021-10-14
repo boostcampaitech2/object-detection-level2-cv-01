@@ -1,0 +1,1 @@
+{"train/loss_center_heatmap": 3.287163996696472, "train/loss_wh": 2.1066336321830748, "train/loss_offset": 0.2518271228671074, "train/loss": 5.645624780654908, "learning_rate": 0.002, "momentum": 0.9, "_runtime": 183, "_timestamp": 1633655840, "_step": 1100, "_wandb": {"runtime": 186}}

@@ -1,0 +1,61 @@
+/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/core/anchor/anchor_generator.py:324: UserWarning: ``grid_anchors`` would be deprecated soon. Please use ``grid_priors``
+  warnings.warn('``grid_anchors`` would be deprecated soon. '
+/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/core/anchor/anchor_generator.py:361: UserWarning: ``single_level_grid_anchors`` would be deprecated soon. Please use ``single_level_grid_priors``
+  '``single_level_grid_anchors`` would be deprecated soon. '
+2021-10-10 04:49:31,566 - mmdet - INFO - Epoch [1][50/1109]	lr: 1.170e-04, eta: 22:49:43, time: 1.483, data_time: 0.049, memory: 6035, loss_rpn_cls: 0.6052, loss_rpn_bbox: 0.0461, s0.loss_cls: 0.4189, s0.acc: 91.9033, s0.loss_bbox: 0.1211, s1.loss_cls: 0.2507, s1.acc: 90.0889, s1.loss_bbox: 0.0690, s2.loss_cls: 0.0635, s2.acc: 93.2910, s2.loss_bbox: 0.0149, loss: 1.5895
+2021-10-10 04:50:40,587 - mmdet - INFO - Epoch [1][100/1109]	lr: 2.160e-04, eta: 22:00:57, time: 1.380, data_time: 0.005, memory: 6035, loss_rpn_cls: 0.2882, loss_rpn_bbox: 0.0380, s0.loss_cls: 0.2235, s0.acc: 95.8848, s0.loss_bbox: 0.0916, s1.loss_cls: 0.0694, s1.acc: 98.0088, s1.loss_bbox: 0.0284, s2.loss_cls: 0.0250, s2.acc: 98.7822, s2.loss_bbox: 0.0054, loss: 0.7695
+2021-10-10 04:51:49,449 - mmdet - INFO - Epoch [1][150/1109]	lr: 3.150e-04, eta: 21:42:57, time: 1.377, data_time: 0.005, memory: 6035, loss_rpn_cls: 0.2042, loss_rpn_bbox: 0.0318, s0.loss_cls: 0.2355, s0.acc: 95.5234, s0.loss_bbox: 0.0964, s1.loss_cls: 0.0657, s1.acc: 97.7764, s1.loss_bbox: 0.0326, s2.loss_cls: 0.0215, s2.acc: 98.7002, s2.loss_bbox: 0.0053, loss: 0.6932
+2021-10-10 04:52:59,758 - mmdet - INFO - Epoch [1][200/1109]	lr: 4.140e-04, eta: 21:40:02, time: 1.406, data_time: 0.005, memory: 6035, loss_rpn_cls: 0.2333, loss_rpn_bbox: 0.0398, s0.loss_cls: 0.2459, s0.acc: 95.3232, s0.loss_bbox: 0.0991, s1.loss_cls: 0.0671, s1.acc: 97.6064, s1.loss_bbox: 0.0324, s2.loss_cls: 0.0218, s2.acc: 98.5488, s2.loss_bbox: 0.0051, loss: 0.7445
+2021-10-10 04:54:08,006 - mmdet - INFO - Epoch [1][250/1109]	lr: 5.130e-04, eta: 21:30:14, time: 1.365, data_time: 0.005, memory: 6035, loss_rpn_cls: 0.1871, loss_rpn_bbox: 0.0319, s0.loss_cls: 0.2156, s0.acc: 95.8721, s0.loss_bbox: 0.0868, s1.loss_cls: 0.0559, s1.acc: 98.0371, s1.loss_bbox: 0.0271, s2.loss_cls: 0.0171, s2.acc: 98.8252, s2.loss_bbox: 0.0046, loss: 0.6260
+2021-10-10 04:55:16,249 - mmdet - INFO - Epoch [1][300/1109]	lr: 6.120e-04, eta: 21:23:19, time: 1.365, data_time: 0.005, memory: 6035, loss_rpn_cls: 0.1982, loss_rpn_bbox: 0.0331, s0.loss_cls: 0.2236, s0.acc: 95.7666, s0.loss_bbox: 0.0886, s1.loss_cls: 0.0583, s1.acc: 97.8984, s1.loss_bbox: 0.0287, s2.loss_cls: 0.0177, s2.acc: 98.7471, s2.loss_bbox: 0.0046, loss: 0.6528
+2021-10-10 04:56:25,346 - mmdet - INFO - Epoch [1][350/1109]	lr: 7.110e-04, eta: 21:20:17, time: 1.382, data_time: 0.005, memory: 6035, loss_rpn_cls: 0.1943, loss_rpn_bbox: 0.0287, s0.loss_cls: 0.2182, s0.acc: 95.9609, s0.loss_bbox: 0.0817, s1.loss_cls: 0.0585, s1.acc: 97.9404, s1.loss_bbox: 0.0261, s2.loss_cls: 0.0185, s2.acc: 98.7637, s2.loss_bbox: 0.0043, loss: 0.6302
+2021-10-10 04:57:33,384 - mmdet - INFO - Epoch [1][400/1109]	lr: 8.100e-04, eta: 21:15:17, time: 1.361, data_time: 0.005, memory: 6035, loss_rpn_cls: 0.1879, loss_rpn_bbox: 0.0333, s0.loss_cls: 0.2437, s0.acc: 95.4795, s0.loss_bbox: 0.0976, s1.loss_cls: 0.0665, s1.acc: 97.8281, s1.loss_bbox: 0.0318, s2.loss_cls: 0.0204, s2.acc: 98.7783, s2.loss_bbox: 0.0049, loss: 0.6861
+2021-10-10 04:58:41,443 - mmdet - INFO - Epoch [1][450/1109]	lr: 9.090e-04, eta: 21:11:12, time: 1.361, data_time: 0.005, memory: 6035, loss_rpn_cls: 0.1860, loss_rpn_bbox: 0.0306, s0.loss_cls: 0.2547, s0.acc: 95.3975, s0.loss_bbox: 0.1012, s1.loss_cls: 0.0674, s1.acc: 97.8555, s1.loss_bbox: 0.0314, s2.loss_cls: 0.0205, s2.acc: 98.7910, s2.loss_bbox: 0.0051, loss: 0.6969
+Traceback (most recent call last):
+  File "tools/train.py", line 189, in <module>
+    main()
+  File "tools/train.py", line 185, in main
+    meta=meta)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/apis/train.py", line 174, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 127, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 50, in train
+    self.run_iter(data_batch, train_mode=True, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 30, in run_iter
+    **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/parallel/data_parallel.py", line 67, in train_step
+    return self.module.train_step(*inputs[0], **kwargs[0])
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/detectors/base.py", line 238, in train_step
+    losses = self(**data)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/fp16_utils.py", line 98, in new_func
+    return old_func(*args, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/detectors/base.py", line 172, in forward
+    return self.forward_train(img, img_metas, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/detectors/two_stage.py", line 127, in forward_train
+    x = self.extract_feat(img)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/detectors/two_stage.py", line 69, in extract_feat
+    x = self.neck(x)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/necks/rfp.py", line 126, in forward
+    x_idx = self.rfp_modules[rfp_idx].rfp_forward(img, rfp_feats)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/backbones/detectors_resnet.py", line 350, in rfp_forward
+    x = layer.rfp_forward(x, rfp_feat)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/backbones/detectors_resnet.py", line 109, in rfp_forward
+    out = _inner_forward(x)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/backbones/detectors_resnet.py", line 86, in _inner_forward
+    out = self.conv2(out)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/ops/saconv.py", line 106, in forward
+    offset = self.offset_s(avg_x)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 423, in forward
+    return self._conv_forward(input, self.weight)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 420, in _conv_forward
+    self.padding, self.dilation, self.groups)
+KeyboardInterrupt
