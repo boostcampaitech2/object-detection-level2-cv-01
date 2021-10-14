@@ -1,0 +1,31 @@
+/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/core/anchor/anchor_generator.py:324: UserWarning: ``grid_anchors`` would be deprecated soon. Please use ``grid_priors``
+  warnings.warn('``grid_anchors`` would be deprecated soon. '
+/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/core/anchor/anchor_generator.py:361: UserWarning: ``single_level_grid_anchors`` would be deprecated soon. Please use ``single_level_grid_priors``
+  '``single_level_grid_anchors`` would be deprecated soon. '
+2021-10-07 09:49:55,923 - mmdet - INFO - Epoch [1][50/1109]	lr: 5.851e-06, eta: 9:36:22, time: 0.624, data_time: 0.049, memory: 4101, loss_rpn_cls: 0.6639, loss_rpn_bbox: 0.0441, s0.loss_cls: 0.8241, s0.acc: 77.2100, s0.loss_bbox: 0.1568, s1.loss_cls: 0.4672, s1.acc: 75.5635, s1.loss_bbox: 0.0426, s2.loss_cls: 0.1245, s2.acc: 89.6562, s2.loss_bbox: 0.0098, loss: 2.3329
+2021-10-07 09:50:24,016 - mmdet - INFO - Epoch [1][100/1109]	lr: 1.080e-05, eta: 9:07:05, time: 0.562, data_time: 0.005, memory: 4101, loss_rpn_cls: 0.4268, loss_rpn_bbox: 0.0369, s0.loss_cls: 0.3080, s0.acc: 94.3555, s0.loss_bbox: 0.1402, s1.loss_cls: 0.0924, s1.acc: 97.3135, s1.loss_bbox: 0.0423, s2.loss_cls: 0.0283, s2.acc: 98.5322, s2.loss_bbox: 0.0072, loss: 1.0820
+2021-10-07 09:50:51,980 - mmdet - INFO - Epoch [1][150/1109]	lr: 1.575e-05, eta: 8:56:12, time: 0.559, data_time: 0.005, memory: 4101, loss_rpn_cls: 0.1909, loss_rpn_bbox: 0.0331, s0.loss_cls: 0.3347, s0.acc: 93.5264, s0.loss_bbox: 0.1643, s1.loss_cls: 0.0978, s1.acc: 96.8369, s1.loss_bbox: 0.0555, s2.loss_cls: 0.0292, s2.acc: 98.4365, s2.loss_bbox: 0.0096, loss: 0.9151
+2021-10-07 09:51:20,081 - mmdet - INFO - Epoch [1][200/1109]	lr: 2.070e-05, eta: 8:51:10, time: 0.562, data_time: 0.005, memory: 4101, loss_rpn_cls: 0.2048, loss_rpn_bbox: 0.0401, s0.loss_cls: 0.3402, s0.acc: 92.8643, s0.loss_bbox: 0.1642, s1.loss_cls: 0.1096, s1.acc: 96.1895, s1.loss_bbox: 0.0620, s2.loss_cls: 0.0365, s2.acc: 97.9561, s2.loss_bbox: 0.0126, loss: 0.9701
+2021-10-07 09:51:48,237 - mmdet - INFO - Epoch [1][250/1109]	lr: 2.565e-05, eta: 8:48:09, time: 0.563, data_time: 0.005, memory: 4101, loss_rpn_cls: 0.1594, loss_rpn_bbox: 0.0322, s0.loss_cls: 0.2982, s0.acc: 93.6992, s0.loss_bbox: 0.1447, s1.loss_cls: 0.1065, s1.acc: 96.1318, s1.loss_bbox: 0.0654, s2.loss_cls: 0.0333, s2.acc: 98.0664, s2.loss_bbox: 0.0135, loss: 0.8533
+2021-10-07 09:52:16,509 - mmdet - INFO - Epoch [1][300/1109]	lr: 3.060e-05, eta: 8:46:21, time: 0.565, data_time: 0.005, memory: 4101, loss_rpn_cls: 0.1652, loss_rpn_bbox: 0.0329, s0.loss_cls: 0.3372, s0.acc: 92.6240, s0.loss_bbox: 0.1665, s1.loss_cls: 0.1124, s1.acc: 95.7744, s1.loss_bbox: 0.0715, s2.loss_cls: 0.0354, s2.acc: 97.7920, s2.loss_bbox: 0.0159, loss: 0.9369
+2021-10-07 09:52:44,555 - mmdet - INFO - Epoch [1][350/1109]	lr: 3.555e-05, eta: 8:44:20, time: 0.561, data_time: 0.006, memory: 4101, loss_rpn_cls: 0.1498, loss_rpn_bbox: 0.0293, s0.loss_cls: 0.3117, s0.acc: 93.0840, s0.loss_bbox: 0.1506, s1.loss_cls: 0.1131, s1.acc: 95.5850, s1.loss_bbox: 0.0717, s2.loss_cls: 0.0363, s2.acc: 97.6367, s2.loss_bbox: 0.0170, loss: 0.8796
+Traceback (most recent call last):
+  File "tools/train.py", line 188, in <module>
+    main()
+  File "tools/train.py", line 184, in main
+    meta=meta)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/apis/train.py", line 174, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 127, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 51, in train
+    self.call_hook('after_train_iter')
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/base_runner.py", line 307, in call_hook
+    getattr(hook, fn_name)(self)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/hooks/optimizer.py", line 35, in after_train_iter
+    runner.outputs['loss'].backward()
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/tensor.py", line 221, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/autograd/__init__.py", line 132, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+KeyboardInterrupt
