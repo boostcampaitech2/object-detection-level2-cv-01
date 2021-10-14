@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "tools/train.py", line 189, in <module>
+    main()
+  File "tools/train.py", line 185, in main
+    meta=meta)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/apis/train.py", line 174, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 127, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 50, in train
+    self.run_iter(data_batch, train_mode=True, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 30, in run_iter
+    **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/parallel/data_parallel.py", line 67, in train_step
+    return self.module.train_step(*inputs[0], **kwargs[0])
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/detectors/base.py", line 238, in train_step
+    losses = self(**data)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/fp16_utils.py", line 98, in new_func
+    return old_func(*args, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/detectors/base.py", line 172, in forward
+    return self.forward_train(img, img_metas, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/detectors/two_stage.py", line 127, in forward_train
+    x = self.extract_feat(img)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/detectors/two_stage.py", line 67, in extract_feat
+    x = self.backbone(img)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/backbones/resnet.py", line 636, in forward
+    x = self.conv1(x)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 423, in forward
+    return self._conv_forward(input, self.weight)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 420, in _conv_forward
+    self.padding, self.dilation, self.groups)
+TypeError: conv2d(): argument 'input' (position 1) must be Tensor, not list

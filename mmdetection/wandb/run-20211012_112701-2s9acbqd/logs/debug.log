@@ -1,0 +1,35 @@
+2021-10-12 11:27:01,679 INFO    MainThread:24996 [wandb_setup.py:_flush():69] setting env: {}
+2021-10-12 11:27:01,679 INFO    MainThread:24996 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-10-12 11:27:01,679 INFO    MainThread:24996 [wandb_init.py:_log_setup():357] Logging user logs to /opt/ml/detection/object-detection-level2-cv-01/wandb/run-20211012_112701-2s9acbqd/logs/debug.log
+2021-10-12 11:27:01,679 INFO    MainThread:24996 [wandb_init.py:_log_setup():358] Logging internal logs to /opt/ml/detection/object-detection-level2-cv-01/wandb/run-20211012_112701-2s9acbqd/logs/debug-internal.log
+2021-10-12 11:27:01,679 INFO    MainThread:24996 [wandb_init.py:init():390] calling init triggers
+2021-10-12 11:27:01,679 INFO    MainThread:24996 [wandb_init.py:init():397] wandb.init called with sweep_config: {}
+config: {}
+2021-10-12 11:27:01,679 INFO    MainThread:24996 [wandb_init.py:init():435] starting backend
+2021-10-12 11:27:01,679 INFO    MainThread:24996 [backend.py:_multiprocessing_setup():72] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-10-12 11:27:01,719 INFO    MainThread:24996 [backend.py:ensure_launched():135] starting backend process...
+2021-10-12 11:27:01,752 INFO    MainThread:24996 [backend.py:ensure_launched():140] started backend process with pid: 25028
+2021-10-12 11:27:01,753 INFO    MainThread:24996 [wandb_init.py:init():440] backend started and connected
+2021-10-12 11:27:01,755 INFO    MainThread:24996 [wandb_init.py:init():499] updated telemetry
+2021-10-12 11:27:01,755 INFO    MainThread:24996 [wandb_init.py:init():522] communicating current version
+2021-10-12 11:27:02,639 INFO    MainThread:24996 [wandb_init.py:init():527] got version response 
+2021-10-12 11:27:02,640 INFO    MainThread:24996 [wandb_init.py:init():535] communicating run to backend with 30 second timeout
+2021-10-12 11:27:02,779 WARNING MainThread:24996 [wandb_init.py:init():829] interrupted
+Traceback (most recent call last):
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 808, in init
+    run = wi.init()
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 536, in init
+    ret = backend.interface.communicate_run(run, timeout=30)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 661, in communicate_run
+    return self._communicate_run(run, timeout=timeout)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 649, in _communicate_run
+    resp = self._communicate(req, timeout=timeout)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 539, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 77, in get
+    is_set = self._object_ready.wait(timeout)
+  File "/opt/conda/envs/detection/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/opt/conda/envs/detection/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

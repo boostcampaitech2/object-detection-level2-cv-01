@@ -1,0 +1,39 @@
+/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/core/anchor/anchor_generator.py:324: UserWarning: ``grid_anchors`` would be deprecated soon. Please use ``grid_priors``
+  warnings.warn('``grid_anchors`` would be deprecated soon. '
+/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/core/anchor/anchor_generator.py:361: UserWarning: ``single_level_grid_anchors`` would be deprecated soon. Please use ``single_level_grid_priors``
+  '``single_level_grid_anchors`` would be deprecated soon. '
+2021-10-11 14:37:41,442 - mmdet - INFO - Epoch [1][50/1109]	lr: 1.170e-04, eta: 13:55:54, time: 0.905, data_time: 0.049, memory: 3364, loss_rpn_cls: 0.6559, loss_rpn_bbox: 0.0387, s0.loss_cls: 0.5382, s0.acc: 90.4111, s0.loss_bbox: 0.1054, s1.loss_cls: 0.3064, s1.acc: 82.9453, s1.loss_bbox: 0.0380, s2.loss_cls: 0.2500, s2.acc: 72.2637, s2.loss_bbox: 0.0112, loss: 1.9438
+Traceback (most recent call last):
+  File "tools/train.py", line 189, in <module>
+    main()
+  File "tools/train.py", line 185, in main
+    meta=meta)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/apis/train.py", line 174, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 127, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 50, in train
+    self.run_iter(data_batch, train_mode=True, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 30, in run_iter
+    **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/parallel/data_parallel.py", line 67, in train_step
+    return self.module.train_step(*inputs[0], **kwargs[0])
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/detectors/base.py", line 238, in train_step
+    losses = self(**data)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/fp16_utils.py", line 98, in new_func
+    return old_func(*args, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/detectors/base.py", line 172, in forward
+    return self.forward_train(img, img_metas, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/detectors/two_stage.py", line 149, in forward_train
+    **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/roi_heads/htc_roi_head.py", line 283, in forward_train
+    rcnn_train_cfg, semantic_feat)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/roi_heads/htc_roi_head.py", line 104, in _bbox_forward_train
+    *bbox_targets)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/fp16_utils.py", line 186, in new_func
+    return old_func(*args, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/models/roi_heads/bbox_heads/bbox_head.py", line 267, in loss
+    avg_factor = max(torch.sum(label_weights > 0).float().item(), 1.)
+KeyboardInterrupt

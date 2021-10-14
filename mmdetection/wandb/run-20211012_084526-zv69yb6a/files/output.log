@@ -1,0 +1,25 @@
+/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/core/anchor/anchor_generator.py:324: UserWarning: ``grid_anchors`` would be deprecated soon. Please use ``grid_priors``
+  warnings.warn('``grid_anchors`` would be deprecated soon. '
+/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/core/anchor/anchor_generator.py:361: UserWarning: ``single_level_grid_anchors`` would be deprecated soon. Please use ``single_level_grid_priors``
+  '``single_level_grid_anchors`` would be deprecated soon. '
+2021-10-12 08:48:18,324 - mmdet - INFO - Epoch [1][50/1221]	lr: 1.170e-04, eta: 2 days, 8:15:14, time: 3.320, data_time: 0.056, memory: 27175, loss_rpn_cls: 0.5764, loss_rpn_bbox: 0.0453, s0.loss_cls: 0.4670, s0.acc: 89.3086, s0.loss_bbox: 0.0696, s1.loss_cls: 0.1876, s1.acc: 90.6768, s1.loss_bbox: 0.0215, s2.loss_cls: 0.1767, s2.acc: 82.3301, s2.loss_bbox: 0.0143, loss: 1.5585
+Traceback (most recent call last):
+  File "tools/train.py", line 189, in <module>
+    main()
+  File "tools/train.py", line 185, in main
+    meta=meta)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/apis/train.py", line 174, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 127, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 51, in train
+    self.call_hook('after_train_iter')
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/base_runner.py", line 307, in call_hook
+    getattr(hook, fn_name)(self)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/hooks/optimizer.py", line 35, in after_train_iter
+    runner.outputs['loss'].backward()
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/tensor.py", line 221, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/autograd/__init__.py", line 132, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+KeyboardInterrupt

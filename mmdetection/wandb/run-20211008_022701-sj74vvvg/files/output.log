@@ -1,0 +1,24 @@
+
+2021-10-08 02:27:22,937 - mmdet - INFO - Epoch [1][50/1109]	lr: 9.990e-04, eta: 2:36:19, time: 0.303, data_time: 0.050, memory: 1695, loss_center_heatmap: 6.3777, loss_wh: 2.3367, loss_offset: 0.4842, loss: 9.1986, grad_norm: 57.3763
+2021-10-08 02:27:35,725 - mmdet - INFO - Epoch [1][100/1109]	lr: 1.998e-03, eta: 2:24:00, time: 0.256, data_time: 0.005, memory: 1695, loss_center_heatmap: 3.5941, loss_wh: 2.3659, loss_offset: 0.3119, loss: 6.2720, grad_norm: 49.2791
+2021-10-08 02:27:47,827 - mmdet - INFO - Epoch [1][150/1109]	lr: 2.997e-03, eta: 2:17:23, time: 0.242, data_time: 0.005, memory: 1695, loss_center_heatmap: 3.6782, loss_wh: 2.3752, loss_offset: 0.2631, loss: 6.3166, grad_norm: 78.3898
+Traceback (most recent call last):
+  File "tools/train.py", line 189, in <module>
+    main()
+  File "tools/train.py", line 185, in main
+    meta=meta)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmdet/apis/train.py", line 174, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 127, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 51, in train
+    self.call_hook('after_train_iter')
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/base_runner.py", line 307, in call_hook
+    getattr(hook, fn_name)(self)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/hooks/optimizer.py", line 37, in after_train_iter
+    grad_norm = self.clip_grads(runner.model.parameters())
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/hooks/optimizer.py", line 31, in clip_grads
+    return clip_grad.clip_grad_norm_(params, **self.grad_clip)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/utils/clip_grad.py", line 38, in clip_grad_norm_
+    if clip_coef < 1:
+KeyboardInterrupt
