@@ -22,3 +22,7 @@ Yolor
    - python test.py --data data/coco.yaml --img 1024 --batch 32 --conf 0.001 --iou 0.5 --device 0 --cfg cfg/yolor_p6.cfg --weights runs/train/yolor_p666/weights/best_ap50.pt --name yolor_p6_val --subm yes --task test
      - (task: test..), (subm: yes -> submission 파일 만들기)
    
+
+
+Convert2Yolo
+ - Python example.py --datasets 'dataset format(ex: COCO)' --img_path 'img path' --label 'label path(ex: coco.json)' --convert_output_path 'convert output save path' --img_type 'img type(ex: "jpg")' --manifest_path 'save manifest path' --cls_list_file 'class names path(ex: coco.names)'
