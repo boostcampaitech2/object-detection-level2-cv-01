@@ -1,7 +1,7 @@
 _base_ = [
-    '/opt/ml/detection/object-detection-level2-cv-01/configs/boostcamp/Cascade_SwinT_PAFPN/dataset.py',
-    '/opt/ml/detection/object-detection-level2-cv-01/configs/boostcamp/Cascade_SwinT_PAFPN/schedule_1x.py', 
-    '/opt/ml/detection/object-detection-level2-cv-01/configs/boostcamp/Cascade_SwinT_PAFPN/default_runtime.py',
+    '/opt/ml/detection/object-detection-level2-cv-01/configs/boostcamp/dataset_final.py',
+    '/opt/ml/detection/object-detection-level2-cv-01/configs/boostcamp/schedule_1x.py', 
+    '/opt/ml/detection/object-detection-level2-cv-01/configs/boostcamp/default_runtime.py',
     '/opt/ml/detection/object-detection-level2-cv-01/configs/boostcamp/Cascade_SwinT_PAFPN/cascade_rcnn_r50_fpn.py'
 ]
 
