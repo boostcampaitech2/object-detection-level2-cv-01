@@ -11,8 +11,6 @@ from tqdm import tqdm
 
 from utils.google_utils import attempt_load
 from utils.datasets import create_dataloader
-# from utils.general import coco80_to_coco91_class, check_dataset, check_file, check_img_size, box_iou, \
-#     non_max_suppression, scale_coords, xyxy2xywh, xywh2xyxy, clip_coords, set_logging, increment_path
 from utils.general import coco80_to_coco91_class, check_dataset, check_file, check_img_size, box_iou, non_max_suppression, scale_coords, xyxy2xywh, xywh2xyxy, clip_coords, set_logging, increment_path
 from utils.loss import compute_loss
 from utils.metrics import ap_per_class
@@ -220,20 +218,11 @@ def test(data,
                                     break
 
             # Append statistics (correct, conf, pcls, tcls)
-            #pdb.set_trace()
             stats.append((correct.cpu(), pred[:, 4].cpu(), pred[:, 5].cpu(), tcls))
             #stats.append((correct, pred[:, 4], pred[:, 5], tcls))
 
-        # # Plot images
-        # if plots and batch_i < 3:
-        #     f = save_dir / f'test_batch{batch_i}_labels.jpg'  # filename
-        #     plot_images(img, targets, paths, f, names)  # labels
-        #     f = save_dir / f'test_batch{batch_i}_pred.jpg'
-        #     # width, height가 1088
-        #     plot_images(img, output_to_target(output, width, height), paths, f, names)  # predictions
     print(len(stats[0]))
     # Compute statistics
-    #pdb.set_trace()
     stats = [np.concatenate(x, 0) for x in zip(*stats)]  # to numpy
     if len(stats) and stats[0].any():
         p, r, ap, f1, ap_class = ap_per_class(*stats, plot=plots, fname=save_dir / 'precision-recall_curve.png')
@@ -242,11 +231,6 @@ def test(data,
         nt = np.bincount(stats[3].astype(np.int64), minlength=nc)  # number of targets per class
     else:
         nt = torch.zeros(1)
-
-    # W&B logging
-    # if plots and wandb:
-    #     wandb.log({"Images": wandb_images})
-    #     wandb.log({"Validation": [wandb.Image(str(x), caption=x.name) for x in sorted(save_dir.glob('test*.jpg'))]})
 
     # Print results
     pf = '%20s' + '%12.3g' * 6  # print format
@@ -278,47 +262,15 @@ def test(data,
             이런식으로 나오고, 'image_id'가 같은 'bbox' 부분을 리스트 하나로 묶어줍니다.
             '''
             print('In --- box_list ---')
-            #d = sorted(dict_data, key=itemgetter('image_id'))
             d = dict_data
-            
-            #print(d[:30])
-            #print(d[30:])
             box_list = []
             temp = []
             bl = False
             id_num = 0
             last_num = d[-1]['image_id']
             for i in range(len(jdict)):
-                #print(i)
                 id_num = d[0]['image_id']
-                #if id_num == 3300:
-                #    print(d[0]['image_id'])
-                #    pdb.set_trace()
-                #print(id_num)
-
-
-                # ;;;
-                # box_list.append(d[0]['category_id'])
-                # box_list.append(d[0]['score'])
-                # box_list.append(d[0]['bbox'][0])
-                # box_list.append(d[0]['bbox'][1])
-                # box_list.append(d[0]['bbox'][2])
-                # box_list.append(d[0]['bbox'][3])
-
-
-                # int로만 함.
-                # box_list.append(d[0]['category_id'])
-                # box_list.append(d[0]['score'])
-                # box_list.append(str(int(d[0]['bbox'][0])))
-                # box_list.append(str(int(d[0]['bbox'][1])))
-                # box_list.append(str(int(d[0]['bbox'][2])+int(d[0]['bbox'][0])))
-                # box_list.append(str(int(d[0]['bbox'][3])+int(d[0]['bbox'][1])))
-
-                #box_list = []
-
-
                 while True:
-
                     if len(d) == 1:
                         box_list.append(d[0]['category_id']-1)
                         box_list.append(d[0]['score'])
@@ -329,7 +281,7 @@ def test(data,
                         temp.append(box_list)
                         return temp
 
-                    ############ 추가 ##############
+                    ############ 추가 ############## csv파일에 1개만 검출 됐을 때, 채워주는 코드
                     if d[0]['image_id'] != d[1]['image_id'] and len(box_list) == 0:
                         box_list.append(d[0]['category_id']-1)
                         box_list.append(d[0]['score'])
@@ -339,7 +291,7 @@ def test(data,
                         box_list.append(str((d[0]['bbox'][3])+(d[0]['bbox'][1])))
                     ############ 추가 ##############    
 
-                    if d[0]['image_id'] == d[1]['image_id']: #or d[0]['image_id'] == last_num:
+                    if d[0]['image_id'] == d[1]['image_id']: 
                         if bl == True:
                             del d[0]
                         box_list.append(d[0]['category_id']-1)
@@ -348,7 +300,6 @@ def test(data,
                         box_list.append(str((d[0]['bbox'][1])))
                         box_list.append(str((d[0]['bbox'][2])+(d[0]['bbox'][0])))
                         box_list.append(str((d[0]['bbox'][3])+(d[0]['bbox'][1])))
-                        #temp.append(box_list)
                         bl = True
                     else:
                         del d[0]
@@ -393,18 +344,10 @@ def test(data,
             return sbm
 
 
-
-        #ddata = copy.deepcopy(jdict)
         d = sorted(jdict, key=itemgetter('image_id'))
-        #pdb.set_trace()
-        #print(d[:5])
-        #print('**'*50)
-        #print(d[-5:])
-        #pdb.set_trace()
         blist = box_list_(d)
 
         csv_list = csv_(blist)
-        #pdb.set_trace()
         sbm_test = sbm_csv(csv_list)
         print(sbm_test)
 
@@ -417,12 +360,6 @@ def test(data,
 
 
     # Save JSON
-    # print(jdict[0])
-    # print(jdict[1])
-    # print(jdict[-1])
-    #print(jdict[:30])
-    # print(len(jdict))
-
     '''
     이 아래 부분은 아마 지워도 될 것 같습니다. 
     에러 뜨셔도 서브미션 파일은 만들어집니다.
@@ -493,10 +430,7 @@ if __name__ == '__main__':
         opt.subm = False
     elif opt.subm == 'yes':
         opt.subm = True
-    #pdb.set_trace()
-    #if opt.task in ['val', 'test']:  # run normally
     if opt.task in ['val', 'test']:  # run normally
-        #print(opt.tast)
         test(opt.data,
              opt.weights,
              opt.batch_size,
