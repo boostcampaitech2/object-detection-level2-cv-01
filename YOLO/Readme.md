@@ -3,10 +3,10 @@ Yolov5
    - Python train.py --img 'img size' --batch 'batch size' --epochs 'epoch' --data 'yaml file path' --cfg 'pretrained yaml file path'
  
  - detect
-   - Python detect.py --weights 'best.pt file path' --img 'img size' --conf 'confidence t' --source 'test data path' --save-txt --save-conf
+   - Python detect.py --weights 'best.pt file path' --img 'img size' --conf 'confidence score' --source 'test data path' --save-txt --save-conf
  
  - val (Test)
-   - Python val.py --data 'y' 
+   - Python val.py --data 'Test dataset path' --img 'img size' --batch 'batch size' --weights 'best.pt file path' --save-json  
 
 
 
