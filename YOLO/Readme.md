@@ -1,5 +1,12 @@
 Yolov5
-
+ - train
+   - Python train.py --img 'img size' --batch 'batch size' --epochs 'epoch' --data 'yaml file path' --cfg 'pretrained yaml file path'
+ 
+ - detect
+   - Python detect.py --weights 'best.pt file path' --img 'img size' --conf 'confidence t' --source 'test data path' --save-txt --save-conf
+ 
+ - val (Test)
+   - Python val.py --data 'y' 
 
 
 
