@@ -26,3 +26,22 @@
     python pkl_to_submission.py --pkl <pkl_file> --csv <output 주소>
 ```
 
+# Utils
+
+## Bbox visualization
+
+        Visualization code in visualization directory
+    
+    - vis_GT.ipynb: visualization of training dataset
+    - vis_test.ipynb: visualization of inference result of test dataset
+    - vis_train.ipynb: comparison of train dataset inference result and GT
+
+## Stratified K-Fold
+
+        Straitified K-Fold split implemented in strat directory
+    
+    - strat_kfold_mmdet.ipynb: json file made for mmdetection library
+    - strat_kfold.ipynb: json file made for boostcamp assignment
+
+
+
