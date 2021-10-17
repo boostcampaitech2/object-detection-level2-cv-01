@@ -86,3 +86,13 @@
  - Training : SGD, mosaic9, batch size 8
  - Loss : Focal Loss
 ```
+### Ensemble
+- WBF ( Weighted Box Fusion)
+- Threshold 0.6
+<img src="https://miro.medium.com/max/716/1*puX35zrcrVTmKdikaBSd_Q.jpeg" />
+
+```
+● final score
+ - Public LB score : mAP 0.643
+ - private LB score : mAP 0.622
+```
