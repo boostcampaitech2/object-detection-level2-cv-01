@@ -17,3 +17,10 @@
 - vscode, git, github, wandb, slack
 
 ### Evaluation
+<img src="https://user-images.githubusercontent.com/64246382/137627632-404ecf72-6244-4128-ae3c-607e8df2a314.PNG" width="600" height="300">
+
+## ♻️ Dataset
+<img src="https://user-images.githubusercontent.com/64246382/137627958-0e2c7787-d8d9-4ad3-b550-806d0a307594.jpg" width="600" height=400">
+<h6>출처 : kr.freepik.com</h6>
+
+
