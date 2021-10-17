@@ -33,3 +33,56 @@
 - bbox 좌표, Category, Score 값 리턴
 - submission 양식에 맞게 csv 파일 만들어 제출 
 
+### Validation Strategy
+- Stratified K-fold
+
+## 🥉 Train Model
+
+### Hybrid Task Cascade
+```
+● ResNext101_64x4d / FPN / Heavy Augmentation
+ - LB score : 0.587
+ - Training : SGD, cosine-annealing scheduler, batch size 4
+ - Loss: Cross-entropy loss & SmoothL1Loss
+
+● ResNext101_64x4d / FPN / Heavy Augmentation & TTA
+ - LB score : 0.601
+ - Training: SGD, cosine-annealing scheduler, batch size 4
+ - Loss: Cross-entropy loss & SmoothL1Loss
+```
+### Cascade R-CNN
+```
+● SwinT / FPN / Soft NMS
+ - LB score : 0.561
+ - Training: AdamW, cosine-annealing scheduler, batch 16
+ - Loss : Cross-entropy loss &SmoothL1Loss
+
+● SwinT / PAFPN / Soft NMS
+ - LB score : 0.558
+ - Training: AdamW, cosine-annealing scheduler, batch 16
+ - Loss : Cross-entropy loss & SmoothL1Loss
+```
+### EfficientDet
+```
+● EfficientDet d7x / Flip Augmentation
+ - LB score : 0.319
+ - Traning: SGD, cosine-annealing scheduler, batch size 2
+ - Loss: Cross-entropy loss
+```
+### YOLO
+```
+● YOLOv5l
+ - LB score : 0.500
+ - Training : SGD, mosaic, batch size 16, LambdLR scheduler
+ - Loss : BCEWithLogitsLoss
+
+● YOLOv5x
+ - LB score : 0.533
+ - Training : SGD, mosaic, batch size 16, LambdLR scheduler
+ - Loss : BCEWithLogitsLoss
+
+● Yolor
+ - LB score : 0.569
+ - Training : SGD, mosaic9, batch size 8
+ - Loss : Focal Loss
+```
